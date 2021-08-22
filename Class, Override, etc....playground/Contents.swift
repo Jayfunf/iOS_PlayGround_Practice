@@ -25,4 +25,4 @@ class Adder2:Adder{ //클래스 상속 Adder2가 Adder를 상속 즉, Adder는 �
 
 var adder2 = Adder2()
 
-adder2.plusNum(target: 20) //super로 인해 값 적용X
+adder2.plusNum(target: 20)
