@@ -38,3 +38,5 @@ p.name = "Minhyun"
 p.age = 23
 
 p.intro()
+
+//MARK: 메소드 게터, 세터
