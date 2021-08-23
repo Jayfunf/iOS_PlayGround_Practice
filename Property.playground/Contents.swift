@@ -16,7 +16,7 @@ struct Student{
     // 인스턴스 저장 프로퍼티
     // 흔히 알던 평범한 프로퍼티이다. 저장만을 위해 사용했음.
     var name: String = ""
-    var `class`: String = "Swift"
+    var `class`: String = "Swift" //`class`를 함수명으로 쓰기 위한 -> ``
     var koreanAge: Int = 0
     
     // 인스턴스 연산 프로퍼티
