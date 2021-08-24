@@ -100,3 +100,15 @@ print(sumFromeThree) // 17 (14에서 초깃값 3까지 더한 값)
 let subFromThree = someNumbers.reduce(3){$0-$1}
 
 print(subFromThree) // -11 (-14에서 초깃값 3을 뺀 나머지 값)
+
+// MARK: - compactMap
+// 옵셔널 값을 사용할 경우 사용
+// nil이 있다면 nil을 제거하고 옵셔널을 해제한 값을 사용 가능
+
+let x: [Int?] = [0,1,2,nil,4]
+
+let map = x.map{$0}
+let cmap = x.compactMap{$0}
+
+print(map) // [Optional(0), Optional(1), Optional(2), nil, Optional(4)]
+print(cmap) // [0, 1, 2, 4] <- 모든 옵셔널이 해제되고 nil값이 제거된 것을 볼 수 있다.
