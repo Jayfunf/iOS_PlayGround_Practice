@@ -35,6 +35,11 @@ subject.send("A")
 subject.send("B")
 //데이터의 발행을 종료합니다.
 subject.send(completion: .finished)
+/* result
+ A
+ B
+ 데이터의 발행이 끝났습니다.
+ */
 
 // MARK: - CurrentValueSubject
 //맨처음 초기값을 지정합니다.
@@ -75,7 +80,6 @@ currentStatus.value = true
  */
 //Subejct 타입의 externalProvider를 초기화합니다.
 let externalProvider = PassthroughSubject<String, Never>()
-
 
 let anyCancleable = externalProvider.sink{ steam in
         print("전달받은데이터 \(steam)")
